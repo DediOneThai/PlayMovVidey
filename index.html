@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeStream - Nonton & Katalog Anime</title>
+    <title>Model Showcase & Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -108,10 +108,10 @@
             font-weight: 600;
         }
 
-        /* Anime Grid - Diubah ukuran minmax agar muat lebih banyak kolom */
+        /* Gallery Grid */
         .anime-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 20px;
         }
 
@@ -134,17 +134,13 @@
             aspect-ratio: 3 / 4;
             background-color: #0f172a;
             overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
-        .poster-placeholder {
-            color: #475569;
-            font-size: 12px;
-            font-weight: 500;
-            text-align: center;
-            padding: 10px;
+        .poster-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .badge-eps {
@@ -250,16 +246,15 @@
     <!-- Header -->
     <header class="site-header">
         <div class="header-container">
-            <a href="#" class="logo">Anime<span>Stream</span></a>
+            <a href="#" class="logo">Model<span>Showcase</span></a>
             <nav class="navbar">
-                <a href="https://dedionethai.github.io/PlayMovVidey" class="nav-item active">Home</a>
-                <a href="#" class="nav-item">Ongoing</a>
-                <a href="#" class="nav-item">Completed</a>
-                <a href="#" class="nav-item">Movie</a>
-                <a href="#" class="nav-item">Genre</a>
+                <a href="#" class="nav-item active">Home</a>
+                <a href="#" class="nav-item">Photoshoot</a>
+                <a href="#" class="nav-item">Commercial</a>
+                <a href="#" class="nav-item">Editorial</a>
             </nav>
             <div class="search-box">
-                <input type="text" placeholder="Cari anime...">
+                <input type="text" placeholder="Cari foto...">
             </div>
         </div>
     </header>
@@ -268,7 +263,7 @@
     <main class="main-container">
         
         <div class="section-header">
-            <h2>Episode Terbaru</h2>
+            <h2>Koleksi Terbaru</h2>
         </div>
 
         <div class="anime-grid">
@@ -276,156 +271,130 @@
             <!-- Item 1 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 12</span>
-                    <span class="badge-rating">★ 8.8</span>
-                    <div class="poster-placeholder">Poster Anime 1</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.8</span>
+                    <img src="517941428_17937037521044593_1347886938991291615_n._meta.jpg" alt="Model Work 1">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Pertama</a></h3>
-                    <p class="anime-meta">Action, Fantasy</p>
+                    <h3 class="anime-title"><a href="#">Studio Indoors Session</a></h3>
+                    <p class="anime-meta">Fashion, Portrait</p>
                 </div>
             </article>
 
             <!-- Item 2 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 05</span>
-                    <span class="badge-rating">★ 7.9</span>
-                    <div class="poster-placeholder">Poster Anime 2</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.5</span>
+                    <img src="518079078_17937037905044593_6380380012601724268_n._meta.jpg" alt="Model Work 2">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Kedua</a></h3>
-                    <p class="anime-meta">Romance, School</p>
+                    <h3 class="anime-title"><a href="#">Cosplay & Mask Theme</a></h3>
+                    <p class="anime-meta">Creative, Red Outfit</p>
                 </div>
             </article>
 
             <!-- Item 3 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 24</span>
-                    <span class="badge-rating">★ 9.1</span>
-                    <div class="poster-placeholder">Poster Anime 3</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.7</span>
+                    <img src="518834466_17937680232044593_5002939557234302249_n._meta.jpg" alt="Model Work 3">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Ketiga</a></h3>
-                    <p class="anime-meta">Sci-Fi, Adventure</p>
+                    <h3 class="anime-title"><a href="#">Red Pattern Set - Angle 1</a></h3>
+                    <p class="anime-meta">Lifestyle, Indoor</p>
                 </div>
             </article>
 
             <!-- Item 4 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Movie</span>
-                    <span class="badge-rating">★ 8.5</span>
-                    <div class="poster-placeholder">Poster Anime 4</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.6</span>
+                    <img src="518932623_17937681282044593_771649117123371386_n._meta.jpg" alt="Model Work 4">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Keempat</a></h3>
-                    <p class="anime-meta">Supernatural, Mystery</p>
+                    <h3 class="anime-title"><a href="#">Red Pattern Set - Angle 2</a></h3>
+                    <p class="anime-meta">Lifestyle, Indoor</p>
                 </div>
             </article>
 
             <!-- Item 5 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 08</span>
-                    <span class="badge-rating">★ 8.2</span>
-                    <div class="poster-placeholder">Poster Anime 5</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.4</span>
+                    <img src="519209056_17937681000044593_7600937937060909022_n._meta.jpg" alt="Model Work 5">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Kelima</a></h3>
-                    <p class="anime-meta">Action, Shounen</p>
+                    <h3 class="anime-title"><a href="#">Casual Black Top - Pose 1</a></h3>
+                    <p class="anime-meta">Casual, Sunlight</p>
                 </div>
             </article>
 
             <!-- Item 6 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 15</span>
-                    <span class="badge-rating">★ 8.6</span>
-                    <div class="poster-placeholder">Poster Anime 6</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.5</span>
+                    <img src="519461001_17937681009044593_1061720136582447703_n._meta.jpg" alt="Model Work 6">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Keenam</a></h3>
-                    <p class="anime-meta">Slice of Life</p>
+                    <h3 class="anime-title"><a href="#">Casual Black Top - Pose 2</a></h3>
+                    <p class="anime-meta">Casual, Sunlight</p>
                 </div>
             </article>
 
             <!-- Item 7 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 03</span>
-                    <span class="badge-rating">★ 7.8</span>
-                    <div class="poster-placeholder">Poster Anime 7</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.9</span>
+                    <img src="519624776_17937680223044593_8988563526492901695_n._meta.jpg" alt="Model Work 7">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Ketujuh</a></h3>
-                    <p class="anime-meta">Isekai, Magic</p>
+                    <h3 class="anime-title"><a href="#">Red Pattern Set - Front View</a></h3>
+                    <p class="anime-meta">Lifestyle, Indoor</p>
                 </div>
             </article>
 
             <!-- Item 8 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 10</span>
-                    <span class="badge-rating">★ 8.9</span>
-                    <div class="poster-placeholder">Poster Anime 8</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.7</span>
+                    <img src="520045807_17937681264044593_225512150764988729_n._meta.jpg" alt="Model Work 8">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Kedelapan</a></h3>
-                    <p class="anime-meta">Sports, Drama</p>
+                    <h3 class="anime-title"><a href="#">Red Pattern Set - Side View</a></h3>
+                    <p class="anime-meta">Lifestyle, Indoor</p>
                 </div>
             </article>
 
             <!-- Item 9 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 02</span>
-                    <span class="badge-rating">★ 8.0</span>
-                    <div class="poster-placeholder">Poster Anime 9</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.3</span>
+                    <img src="520172795_17937681090044593_3517204147056433082_n._meta.jpg" alt="Model Work 9">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Kesembilan</a></h3>
-                    <p class="anime-meta">Mecha, Sci-Fi</p>
+                    <h3 class="anime-title"><a href="#">Vintage Door Concept</a></h3>
+                    <p class="anime-meta">Casual, Sporty</p>
                 </div>
             </article>
 
             <!-- Item 10 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 11</span>
-                    <span class="badge-rating">★ 8.4</span>
-                    <div class="poster-placeholder">Poster Anime 10</div>
+                    <span class="badge-eps">HD</span>
+                    <span class="badge-rating">★ 9.6</span>
+                    <img src="517206091_17937036729044593_6291568275142357829_n._meta.jpg" alt="Model Work 10">
                 </div>
                 <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Kesepuluh</a></h3>
-                    <p class="anime-meta">Ecchi, Comedy</p>
-                </div>
-            </article>
-
-            <!-- Item 11 -->
-            <article class="anime-card">
-                <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 07</span>
-                    <span class="badge-rating">★ 9.0</span>
-                    <div class="poster-placeholder">Poster Anime 11</div>
-                </div>
-                <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Kesebelas</a></h3>
-                    <p class="anime-meta">Thriller, Mystery</p>
-                </div>
-            </article>
-
-            <!-- Item 12 -->
-            <article class="anime-card">
-                <div class="poster-wrapper">
-                    <span class="badge-eps">Eps 14</span>
-                    <span class="badge-rating">★ 8.3</span>
-                    <div class="poster-placeholder">Poster Anime 12</div>
-                </div>
-                <div class="anime-info">
-                    <h3 class="anime-title"><a href="#">Judul Anime Keduabelas</a></h3>
-                    <p class="anime-meta">Historical, Samurai</p>
+                    <h3 class="anime-title"><a href="#">Balcony Floral Top</a></h3>
+                    <p class="anime-meta">Outdoor, Daylight</p>
                 </div>
             </article>
 
@@ -435,7 +404,6 @@
         <div class="pagination">
             <a href="#" class="page-link active">1</a>
             <a href="#" class="page-link">2</a>
-            <a href="#" class="page-link">3</a>
             <a href="#" class="page-link">Next »</a>
         </div>
 
@@ -443,10 +411,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 AnimeStream. All rights reserved.</p>
-        <p style="margin-top: 8px;">
-            <a href="#">DMCA</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a>
-        </p>
+        <p>&copy; 2026 Model Showcase. All rights reserved.</p>
     </footer>
 
 </body>

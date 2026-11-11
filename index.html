@@ -4,145 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio & Showcases</title>
-    <!-- Font Google Modern -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- Header / Navbar -->
-    <header class="site-header">
-        <div class="header-container">
-            <nav class="navbar">
-                <a href="#" class="nav-item active">🏠 Home</a>
-                <a href="#" class="nav-item">Portfolio Indo</a>
-                <a href="#" class="nav-item">Commercial</a>
-                <a href="#" class="nav-item">Editorial</a>
-                <a href="#" class="nav-item">Runway</a>
-                <a href="#" class="nav-item">Tags</a>
-            </nav>
-        </div>
-    </header>
+        body {
+            background-color: #0f1015;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+        }
 
-    <!-- Konten Utama -->
-    <main class="main-container">
-        
-        <!-- Filter Bar / Title Bar -->
-        <div class="filter-bar">
-            <div class="filter-title">
-                <span class="accent-bar"></span>
-                <h2>Latest Works</h2>
-            </div>
-            <div class="filter-dropdown">
-                <select id="sortSelect">
-                    <option value="recent">Terbaru</option>
-                    <option value="popular">Terpopuler</option>
-                    <option value="rating">Rating Tertinggi</option>
-                </select>
-            </div>
-        </div>
+        .site-header {
+            background-color: #161822;
+            border-bottom: 1px solid #24283b;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-        <!-- Grid Portofolio -->
-        <section class="gallery-grid">
-            
-            <!-- Item 1 -->
-            <article class="card">
-                <a href="#" class="card-media">
-                    <div class="media-placeholder">
-                        <span class="play-icon">▶</span>
-                        <span class="placeholder-text">Klik Gambar</span>
-                    </div>
-                    <div class="badge-overlay">
-                        <span class="badge views">👁 51K</span>
-                        <span class="badge duration">⏱ 02:14</span>
-                    </div>
-                </a>
-                <div class="card-body">
-                    <div class="card-rating">👍 100%</div>
-                    <h3 class="card-title"><a href="#">Judul Video Pertama</a></h3>
-                </div>
-            </article>
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 12px 24px;
+        }
 
-            <!-- Item 2 -->
-            <article class="card">
-                <a href="#" class="card-media">
-                    <div class="media-placeholder">
-                        <span class="play-icon">▶</span>
-                        <span class="placeholder-text">Klik Gambar</span>
-                    </div>
-                    <div class="badge-overlay">
-                        <span class="badge views">👁 81K</span>
-                        <span class="badge duration">⏱ 17:16</span>
-                    </div>
-                </a>
-                <div class="card-body">
-                    <div class="card-rating">👍 100%</div>
-                    <h3 class="card-title"><a href="#">Judul Video Kedua</a></h3>
-                </div>
-            </article>
+        .navbar {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
 
-            <!-- Item 3 -->
-            <article class="card">
-                <a href="#" class="card-media">
-                    <div class="media-placeholder">
-                        <span class="play-icon">▶</span>
-                        <span class="placeholder-text">Klik Gambar</span>
-                    </div>
-                    <div class="badge-overlay">
-                        <span class="badge views">👁 76K</span>
-                        <span class="badge duration">⏱ 09:01</span>
-                    </div>
-                </a>
-                <div class="card-body">
-                    <div class="card-rating">👍 100%</div>
-                    <h3 class="card-title"><a href="#">Judul Video Ketiga</a></h3>
-                </div>
-            </article>
+        .nav-item {
+            background-color: #1f2335;
+            color: #9aa5ce;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
 
-            <!-- Item 4 -->
-            <article class="card">
-                <a href="#" class="card-media">
-                    <div class="media-placeholder">
-                        <span class="play-icon">▶</span>
-                        <span class="placeholder-text">Klik Gambar</span>
-                    </div>
-                    <div class="badge-overlay">
-                        <span class="badge views">👁 71K</span>
-                        <span class="badge duration">⏱ 10:01</span>
-                    </div>
-                </a>
-                <div class="card-body">
-                    <div class="card-rating">👍 100%</div>
-                    <h3 class="card-title"><a href="#">Judul Video Keempat</a></h3>
-                </div>
-            </article>
+        .nav-item:hover {
+            color: #ffffff;
+            background-color: #292e42;
+        }
 
-        </section>
+        .nav-item.active {
+            background: linear-gradient(135deg, #7aa2f7, #bb9af7);
+            color: #1a1b26;
+            font-weight: 600;
+        }
 
-        <!-- Pagination -->
-        <nav class="pagination-container">
-            <a href="#" class="page-item active">1</a>
-            <a href="#" class="page-item">2</a>
-            <a href="#" class="page-item">3</a>
-            <a href="#" class="page-item">4</a>
-            <a href="#" class="page-item">5</a>
-            <a href="#" class="page-item btn-nav">Next</a>
-            <a href="#" class="page-item btn-nav">Last</a>
-        </nav>
+        .main-container {
+            max-width: 1280px;
+            margin: 32px auto;
+            padding: 0 24px;
+        }
 
-    </main>
+        .filter-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #161822;
+            border: 1px solid #24283b;
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin-bottom: 24px;
+        }
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <ul class="footer-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">DMCA Policy</a></li>
-            </ul>
-            <p class="copyright">&copy; 2026 ModelPortofolio. All rights reserved.</p>
-        </div>
-    </footer>
+        .filter-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-</body>
-</html>
+        .accent-bar {
+            width: 4px;
+            height: 18px;
+            background: #bb9af7;
+            border-radius: 2px;
+        }
+
+        .filter-title h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #f7768e;
+        }
+
+        .filter-dropdown select {
+            background-color: #1f2335;
+            color: #c0caf5;
+            border: 1px solid #24283b;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #161822;
+            border: 1px solid #24283b;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #414868;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-media {
+            display: block;
+            position: relative;
+            aspect-ratio: 16 / 9;
+            background-color: #0b0c10;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .media-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #565f89;
+            transition: color 0.2s ease, transform 0.3s ease;
+        }
+
+        .card:hover .media-placeholder {
+            color: #c0caf5;
+            transform: scale(1.05);
+        }
+
+        .play-icon {
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .placeholder-text {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .badge-overlay {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            right: 8px;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+
+        .badge {
+            background-color: rgba(15, 16, 21, 0.85);
+            backdrop-filter: blur(4px);
+            color: #a9b1d6;
+            font-size: 11px;
+            font-weight: 500;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card-body {
+            padding: 14px;
+            text-align: center;
+        }
+
+        .card-rating {
+            color: #e0af68;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .

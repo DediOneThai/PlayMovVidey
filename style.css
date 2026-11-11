@@ -1,0 +1,143 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 15px 30px;
+    border-bottom: 2px solid #2a2a2a;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.nav-item.active, .nav-item:hover {
+    background-color: #7b2cbf;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    background-color: #1e1e1e;
+    padding: 10px 15px;
+    border-left: 4px solid #7b2cbf;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #181818;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.thumbnail {
+    background-color: #0d0d0d;
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-weight: bold;
+}
+
+.stats-bottom {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.card-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.rating {
+    color: #ffb703;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.title {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 40px 0;
+}
+
+.page-link {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.page-link.active, .page-link:hover {
+    background-color: #7b2cbf;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #777;
+    font-size: 12px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #7b2cbf;
+    text-decoration: none;
+    margin: 0 10px;
+}

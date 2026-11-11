@@ -108,10 +108,10 @@
             font-weight: 600;
         }
 
-        /* Anime Grid */
+        /* Anime Grid - Diubah ukuran minmax agar muat lebih banyak kolom */
         .anime-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 20px;
         }
 
@@ -141,17 +141,10 @@
 
         .poster-placeholder {
             color: #475569;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 500;
             text-align: center;
             padding: 10px;
-        }
-
-        /* Jika menggunakan gambar asli nanti, gunakan tag <img> di dalam poster-wrapper */
-        .poster-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
 
         .badge-eps {
@@ -184,7 +177,7 @@
         }
 
         .anime-title {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             line-height: 1.3;
             margin-bottom: 4px;
@@ -204,7 +197,7 @@
         }
 
         .anime-meta {
-            font-size: 12px;
+            font-size: 11px;
             color: #64748b;
         }
 
@@ -280,7 +273,7 @@
 
         <div class="anime-grid">
             
-            <!-- Anime 1 -->
+            <!-- Item 1 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
                     <span class="badge-eps">Eps 12</span>
@@ -293,7 +286,7 @@
                 </div>
             </article>
 
-            <!-- Anime 2 -->
+            <!-- Item 2 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
                     <span class="badge-eps">Eps 05</span>
@@ -306,7 +299,7 @@
                 </div>
             </article>
 
-            <!-- Anime 3 -->
+            <!-- Item 3 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
                     <span class="badge-eps">Eps 24</span>
@@ -319,7 +312,7 @@
                 </div>
             </article>
 
-            <!-- Anime 4 -->
+            <!-- Item 4 -->
             <article class="anime-card">
                 <div class="poster-wrapper">
                     <span class="badge-eps">Movie</span>
@@ -329,6 +322,110 @@
                 <div class="anime-info">
                     <h3 class="anime-title"><a href="#">Judul Anime Keempat</a></h3>
                     <p class="anime-meta">Supernatural, Mystery</p>
+                </div>
+            </article>
+
+            <!-- Item 5 -->
+            <article class="anime-card">
+                <div class="poster-wrapper">
+                    <span class="badge-eps">Eps 08</span>
+                    <span class="badge-rating">★ 8.2</span>
+                    <div class="poster-placeholder">Poster Anime 5</div>
+                </div>
+                <div class="anime-info">
+                    <h3 class="anime-title"><a href="#">Judul Anime Kelima</a></h3>
+                    <p class="anime-meta">Action, Shounen</p>
+                </div>
+            </article>
+
+            <!-- Item 6 -->
+            <article class="anime-card">
+                <div class="poster-wrapper">
+                    <span class="badge-eps">Eps 15</span>
+                    <span class="badge-rating">★ 8.6</span>
+                    <div class="poster-placeholder">Poster Anime 6</div>
+                </div>
+                <div class="anime-info">
+                    <h3 class="anime-title"><a href="#">Judul Anime Keenam</a></h3>
+                    <p class="anime-meta">Slice of Life</p>
+                </div>
+            </article>
+
+            <!-- Item 7 -->
+            <article class="anime-card">
+                <div class="poster-wrapper">
+                    <span class="badge-eps">Eps 03</span>
+                    <span class="badge-rating">★ 7.8</span>
+                    <div class="poster-placeholder">Poster Anime 7</div>
+                </div>
+                <div class="anime-info">
+                    <h3 class="anime-title"><a href="#">Judul Anime Ketujuh</a></h3>
+                    <p class="anime-meta">Isekai, Magic</p>
+                </div>
+            </article>
+
+            <!-- Item 8 -->
+            <article class="anime-card">
+                <div class="poster-wrapper">
+                    <span class="badge-eps">Eps 10</span>
+                    <span class="badge-rating">★ 8.9</span>
+                    <div class="poster-placeholder">Poster Anime 8</div>
+                </div>
+                <div class="anime-info">
+                    <h3 class="anime-title"><a href="#">Judul Anime Kedelapan</a></h3>
+                    <p class="anime-meta">Sports, Drama</p>
+                </div>
+            </article>
+
+            <!-- Item 9 -->
+            <article class="anime-card">
+                <div class="poster-wrapper">
+                    <span class="badge-eps">Eps 02</span>
+                    <span class="badge-rating">★ 8.0</span>
+                    <div class="poster-placeholder">Poster Anime 9</div>
+                </div>
+                <div class="anime-info">
+                    <h3 class="anime-title"><a href="#">Judul Anime Kesembilan</a></h3>
+                    <p class="anime-meta">Mecha, Sci-Fi</p>
+                </div>
+            </article>
+
+            <!-- Item 10 -->
+            <article class="anime-card">
+                <div class="poster-wrapper">
+                    <span class="badge-eps">Eps 11</span>
+                    <span class="badge-rating">★ 8.4</span>
+                    <div class="poster-placeholder">Poster Anime 10</div>
+                </div>
+                <div class="anime-info">
+                    <h3 class="anime-title"><a href="#">Judul Anime Kesepuluh</a></h3>
+                    <p class="anime-meta">Ecchi, Comedy</p>
+                </div>
+            </article>
+
+            <!-- Item 11 -->
+            <article class="anime-card">
+                <div class="poster-wrapper">
+                    <span class="badge-eps">Eps 07</span>
+                    <span class="badge-rating">★ 9.0</span>
+                    <div class="poster-placeholder">Poster Anime 11</div>
+                </div>
+                <div class="anime-info">
+                    <h3 class="anime-title"><a href="#">Judul Anime Kesebelas</a></h3>
+                    <p class="anime-meta">Thriller, Mystery</p>
+                </div>
+            </article>
+
+            <!-- Item 12 -->
+            <article class="anime-card">
+                <div class="poster-wrapper">
+                    <span class="badge-eps">Eps 14</span>
+                    <span class="badge-rating">★ 8.3</span>
+                    <div class="poster-placeholder">Poster Anime 12</div>
+                </div>
+                <div class="anime-info">
+                    <h3 class="anime-title"><a href="#">Judul Anime Keduabelas</a></h3>
+                    <p class="anime-meta">Historical, Samurai</p>
                 </div>
             </article>
 
